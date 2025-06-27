@@ -5,6 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato - LevelUpX</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Adicione isso no seu CSS se ainda não tiver */
+        .erro {
+            color: red;
+            font-size: 0.8em;
+            display: block;
+            margin-top: 5px;
+        }
+        .mensagem-sucesso {
+            display: none;
+            color: green;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e8f5e9;
+            border-radius: 4px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -52,8 +69,8 @@
                 </div>
                 
                 <div class="form-group">
-                    <label for="recado">Recado:</label>
-                    <textarea id="recado" name="recado" rows="5" required></textarea>
+                    <label for="mensagem">Recado:</label> <!-- Mudei o for para "mensagem" -->
+                    <textarea id="mensagem" name="mensagem" rows="5" required></textarea> <!-- Mudei o id para "mensagem" -->
                     <span class="erro" id="erro-mensagem"></span>
                 </div>
                 
